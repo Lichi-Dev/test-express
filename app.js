@@ -1,14 +1,14 @@
 const express = require("express");
 const app = express();
-const port = 3000;
+const port = 3003;
 
-app.get("/", (req, res) => {
+app.get("/nodeapp", (req, res) => {
   res.send("Server is running");
 });
-app.get("/marqeting", (req, res) => {
-  res.send("Marqeting route is running");
-});
 
+app.get("/:universalURL", (req, res) => {
+  res.send("404 URL NOT FOUND-Check");
+});
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });

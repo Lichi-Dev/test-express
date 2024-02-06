@@ -2,9 +2,9 @@
   "name": "test-server",
   "version": "1.0.0",
   "description": "Server for testing deployment",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node app.js"
   },
   "author": "Bonny Boben",
   "license": "ISC",
